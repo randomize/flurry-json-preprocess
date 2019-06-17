@@ -4,6 +4,22 @@
     <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_.19.00" t="ExcludeRecursive" />
     <e p="$USER_HOME$/.Rider2019.1/system/rust_expanded_macros/siuhqiYX/expansions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/ansi_term-0.11.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/atty-0.2.11" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/bitflags-1.1.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/clap-2.33.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.58" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/numtoa-0.1.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/redox_syscall-0.1.54" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/redox_termios-0.1.1" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/strsim-0.8.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/termion-1.5.3" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.11.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/unicode-width-0.1.5" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/vec_map-0.8.1" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-0.3.7" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-i686-pc-windows-gnu-0.4.0" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/winapi-x86_64-pc-windows-gnu-0.4.0" t="IncludeRecursive" />
     <e p="$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/build_helper" t="IncludeRecursive" />
     <e p="$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/liballoc" t="IncludeRecursive" />
     <e p="$USER_HOME$/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/libcore" t="IncludeRecursive" />
