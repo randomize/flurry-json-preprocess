@@ -1,10 +1,36 @@
+/* 
+ vim: ft=rs tw=200
+
+Flurry JSON fixing utility. 
+
+Since Flurry comes as multi-line file with each line being json object,
+its not convinient for importing into Pandas or similar libraries.
+This utility converts Flurry format into single root json object with
+an array of Flurry events.
+
+Copyright © 2019 Eugene Mihailenco <mihailencoe@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 use std::fs::File;
 use std::io;
 use std::io::BufRead;
 use std::io::BufReader;
 use std::io::BufWriter;
 use std::io::Write;
-use clap::{Arg, App, SubCommand};
+use clap::{Arg, App};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 
@@ -31,12 +57,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let mut reader = BufReader::new(&f);
 
     // writing
-    let mut writer = BufWriter::new(
-        match output_filename_opt {
-            Some(x) => File::open(x).unwrap(),
-            None => io::stdout()
-        }
-    );
+    let source : Box<dyn Write> = match output_filename_opt {
+        Some(path) => Box::new(File::create(path).unwrap()),
+        None => Box::new(io::stdout())
+    };
+
+    let mut writer = BufWriter::new(source);
 
     // Header
     writer.write(b"{ \"data\": [\n").unwrap();
@@ -57,7 +83,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         if buf.len() == 0 {
             break;
         }
-        writer.write(b",\n").unwrap();
+        writer.write(b",").unwrap();
         writer.write(&buf).unwrap();
     }
 
