@@ -1,7 +1,8 @@
 # DEPRECATED! flurry-json-preprocess
 
 Rust utility to preprocess RAW data exported from Flurry into format more sutable for Pandas import
-*DEPRECATED* since you can use lines mode in Pandas `data_df = pd.read_json('my.json', lines=True)` and avoid pre-processing
+
+**DEPRECATED** since you can use lines mode in Pandas `data_df = pd.read_json('my.json', lines=True)` and avoid pre-processing
 
 # How it works
 
